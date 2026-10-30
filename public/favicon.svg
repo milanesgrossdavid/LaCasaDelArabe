@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#0a0a0a"/>
+  <!-- bottle body -->
+  <path d="M22 26 L22 46 Q22 54 32 54 Q42 54 42 46 L42 26 Z" fill="#d4af37"/>
+  <!-- shoulders -->
+  <path d="M26 22 L22 26 L42 26 L38 22 Z" fill="#b8962e"/>
+  <!-- neck -->
+  <rect x="28" y="14" width="8" height="8" fill="#b8962e"/>
+  <!-- cap -->
+  <rect x="26" y="8" width="12" height="6" rx="2" fill="#f5e6b8"/>
+  <!-- ornament diamond -->
+  <path d="M32 32 L36 38 L32 44 L28 38 Z" fill="#0a0a0a"/>
+  <!-- arabesque lines -->
+  <path d="M24 40 Q32 44 40 40" stroke="#0a0a0a" stroke-width="1" fill="none"/>
+</svg>

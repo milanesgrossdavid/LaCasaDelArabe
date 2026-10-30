@@ -1,0 +1,2 @@
+import { MessageCircle } from "lucide-react"; import { business } from "@/lib/business";
+export function WhatsAppFloat(){return <a className="whatsapp-float" href={`https://wa.me/${business.whatsapp}?text=${encodeURIComponent(`Hola, quisiera consultar sobre sus perfumes.`)}`} target="_blank" rel="noreferrer" aria-label="Consultar por WhatsApp"><MessageCircle size={22}/><span>¿Te ayudamos?</span></a>}
