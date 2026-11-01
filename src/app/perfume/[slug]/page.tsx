@@ -149,10 +149,7 @@ export default async function PerfumePage({
         <h2>
           Una historia en <em>tres actos.</em>
         </h2>
-        <p className="notes-intro">
-          La evolución de una fragancia: desde la primera impresión hasta el
-          recuerdo que permanece.
-        </p>
+        <br></br>
         <div className="notes-pyramid">
           {[
             {
@@ -178,7 +175,6 @@ export default async function PerfumePage({
       <section className="section related-section">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">SI TE GUSTA ESTE PERFIL</p>
             <h2>
               También te puede <em>enamorar.</em>
             </h2>
