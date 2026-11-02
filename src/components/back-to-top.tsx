@@ -16,7 +16,7 @@ export function BackToTop() {
       style={{
         position: 'fixed',
         bottom: '2rem',
-        right: '5.5rem',
+        right: '4.75rem',
         width: '28px',
         height: '28px',
         borderRadius: '50%',
