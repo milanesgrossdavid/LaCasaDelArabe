@@ -1,6 +1,27 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
 
+type PerfumeRow = {
+  id: string;
+  slug: string;
+  name: string;
+  brand: string;
+  price: number | string;
+  size_ml: number;
+  gender: string;
+  family: string;
+  description: string | null;
+  images: string[] | null;
+  stock: number;
+  featured: boolean;
+  is_new: boolean;
+  notes: { top: string[]; heart: string[]; base: string[] } | null;
+  occasions: string[] | null;
+  season: string[] | null;
+  intensity: string | null;
+  published?: boolean | null;
+};
+
 export async function GET() {
   const supabase = await createClient();
   if (!supabase) return NextResponse.json({ perfumes: [], source: 'none' });
@@ -16,8 +37,8 @@ export async function GET() {
     error = res.error;
   }
   const normalized = (data ?? [])
-    .filter((p: any) => p.published !== false) // show if published true or undefined/null
-    .map((p: any) => ({
+    .filter((p: PerfumeRow) => p.published !== false)
+    .map((p: PerfumeRow) => ({
       id: p.id,
       slug: p.slug,
       name: p.name,
